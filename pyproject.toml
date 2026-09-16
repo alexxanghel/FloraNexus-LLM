@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "floranexus-llm"
+version = "0.1.0"
+description = "Grounded LLM agent developed for the FloraNexus medicinal-plant application."
+requires-python = ">=3.11"
+dependencies = [
+  "neo4j>=5.28,<6",
+  "pydantic>=2.10,<3",
+  "pydantic-settings>=2.6,<3",
+  "groq>=0.18,<1",
+  "langfuse>=2.60,<3",
+  "requests>=2.32,<3",
+  "python-dotenv>=1.0,<2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

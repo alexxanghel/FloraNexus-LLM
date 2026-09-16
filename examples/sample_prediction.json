@@ -1,0 +1,25 @@
+{
+  "request_id": "demo-001",
+  "timestamp": "2026-01-01T12:00:00Z",
+  "input": {
+    "image_path": "example.jpg",
+    "source": "demo"
+  },
+  "prediction": {
+    "plant_id": "matricaria_chamomilla",
+    "plant_name_ro": "Mușețel",
+    "plant_name_scientific": "Matricaria chamomilla",
+    "confidence": 0.93,
+    "top_k": [
+      {"plant_id": "matricaria_chamomilla", "score": 0.93},
+      {"plant_id": "leucanthemum_vulgare", "score": 0.04},
+      {"plant_id": "tanacetum_vulgare", "score": 0.03}
+    ]
+  },
+  "inference": {
+    "model_name": "efficientnet_b3",
+    "model_version": "1.0",
+    "inference_ms": 42
+  },
+  "status": "predicted"
+}
